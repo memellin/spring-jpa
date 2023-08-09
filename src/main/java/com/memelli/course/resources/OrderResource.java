@@ -1,4 +1,4 @@
-package com.fardim.course.resources;
+package com.memelli.course.resources;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fardim.course.entities.Order;
-import com.fardim.course.services.OrderService;
+import com.memelli.course.entities.Order;
+import com.memelli.course.services.OrderService;
 
 
 // essa classe é o o controlador rest

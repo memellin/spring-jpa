@@ -1,4 +1,4 @@
-package com.fardim.course;
+package com.memelli.course;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

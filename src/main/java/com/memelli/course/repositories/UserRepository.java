@@ -1,8 +1,8 @@
-package com.fardim.course.repositories;
+package com.memelli.course.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.fardim.course.entities.User;
+import com.memelli.course.entities.User;
 
 
 public interface UserRepository extends JpaRepository<User, Long>{

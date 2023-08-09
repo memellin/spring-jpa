@@ -1,4 +1,4 @@
-package com.fardim.course.entities.enums;
+package com.memelli.course.entities.enums;
 
 public enum OrderStatus {
 

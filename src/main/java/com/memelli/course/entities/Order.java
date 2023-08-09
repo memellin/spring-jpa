@@ -1,10 +1,10 @@
-package com.fardim.course.entities;
+package com.memelli.course.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
 
-import com.fardim.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.memelli.course.entities.enums.OrderStatus;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

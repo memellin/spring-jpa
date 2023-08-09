@@ -1,8 +1,8 @@
-package com.fardim.course.repositories;
+package com.memelli.course.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.fardim.course.entities.Order;
+import com.memelli.course.entities.Order;
 
 
 public interface OrderRepository extends JpaRepository<Order, Long>{

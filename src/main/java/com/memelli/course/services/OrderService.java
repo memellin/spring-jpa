@@ -1,4 +1,4 @@
-package com.fardim.course.services;
+package com.memelli.course.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.fardim.course.entities.Order;
-import com.fardim.course.repositories.OrderRepository;
+import com.memelli.course.entities.Order;
+import com.memelli.course.repositories.OrderRepository;
 
 @Service
 public class OrderService {
