@@ -19,7 +19,7 @@ import com.memelli.course.entities.User;
 import com.memelli.course.services.UserService;
 
 
-// essa classe é o o controlador rest
+// essa classe é o o controlador rest -- endpoint são essas funções
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
