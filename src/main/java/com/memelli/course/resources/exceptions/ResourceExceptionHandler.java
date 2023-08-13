@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.memelli.course.services.exceptions.DatabaseException;
 import com.memelli.course.services.exceptions.ResourceNotFoundException;
+import com.memelli.course.services.exceptions.UserNotFoundException;
 
 import jakarta.servlet.http.HttpServletRequest;
 
@@ -30,6 +31,11 @@ public class ResourceExceptionHandler {
 		StandardError err = new StandardError(Instant.now(), status.value(), error, e.getMessage(), request.getRequestURI());
 		return ResponseEntity.status(status).body(err);
 	}
+	@ExceptionHandler(UserNotFoundException.class)
+    public ResponseEntity<CustomErrorResponse> handleUserNotFoundException(UserNotFoundException ex) {
+        CustomErrorResponse errorResponse = new CustomErrorResponse(HttpStatus.NOT_FOUND.value(), ex.getMessage());
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
 	
 	
 }
